@@ -6,6 +6,81 @@
     letter-spacing: 0.05rem;
 }
 
+
+
+
+
+
+
+/*Loader*/
+#loader {
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: ease;
+}
+
+.loader {
+	overflow: hidden;
+}
+
+#loader.none {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.square {
+	width: 11px;
+	height: 11px;
+	margin: 11px;
+	display: inline-block;
+	animation: bouncer cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.75s infinite alternate;
+	border-radius: 50%;
+}
+
+	.square:nth-child(1) {
+		background-color: #875882;
+	}
+
+	.square:nth-child(2) {
+		background-color: #58394B;
+		animation-delay: 0.1s;
+	}
+
+	.square:nth-child(3) {
+		background-color: #C29ABF;
+		animation-delay: 0.2s;
+	}
+
+
+@keyframes bouncer {
+	100% {
+		transform: scale(1.75) translateY(-20px);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .row {
     width: 100%;
     /* max-width: 1200px; */
