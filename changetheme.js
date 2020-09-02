@@ -1,3 +1,6 @@
+"use strict";
+
+
 window.onload = function() {
     // Select the button
     const lightModeBtn = document.querySelector(".ally-light-mode");
@@ -9,15 +12,31 @@ window.onload = function() {
     // Select the stylesheet <link>
     const theme = document.querySelector("#theme-link");
 
+    // Get the user's theme preference from local storage, if it's available
+    const currentTheme = localStorage.getItem("theme");
+
+    if (currentTheme == null || currentTheme == "Light") {
+        theme.href = "light-home.css";
+    } else if (currentTheme == "Dark") {
+        theme.href = "dark-home.css";
+    }
+
     // Listen for a click on the button
     darkModeBtn.addEventListener("click", function(e) {
         // console.log("dsaada");
         // If the current URL contains "ligh-theme.css"
         if (theme.getAttribute("href") == "light-home.css") {
+            
             // ... then switch it to "dark-theme.css"
             theme.href = "dark-home.css";
             blur.style.display = "none";
             allyModal.style.display = "none";
+
+            // ...but use .dark-mode if the .light-mode class is already on the body,
+            // var theme = document.body.classList.contains("light-mode") ? "light" : "dark";
+            
+            // Finally, let's save the current preference to localStorage to keep using it
+            localStorage.setItem("theme", "Dark");
         } else {
             blur.style.display = "none";
             allyModal.style.display = "none";
@@ -30,14 +49,23 @@ window.onload = function() {
         // console.log("dsaada");
         // If the current URL contains "ligh-theme.css"
         if (theme.getAttribute("href") == "dark-home.css") {
+            
             // ... then switch it to "dark-theme.css"
             theme.href = "light-home.css";
             blur.style.display = "none";
             allyModal.style.display = "none";
+
+            // ...but use .dark-mode if the .light-mode class is already on the body,
+            // var theme = document.body.classList.contains("light-mode") ? "light" : "dark";
+            
+            // Finally, let's save the current preference to localStorage to keep using it
+            localStorage.setItem("theme", "Light");
+
         } else {
             blur.style.display = "none";
             allyModal.style.display = "none";
         }
         e.preventDefault();
     })
-}
+};
+

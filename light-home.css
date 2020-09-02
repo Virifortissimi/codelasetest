@@ -193,8 +193,8 @@ p.project-description {
     position: fixed;
     top: 300px;
     left: 40%;
-    border: 1px solid rgb(236, 202, 222);
-    box-shadow: 0px 0px 8px 3px rgb(236, 202, 222);
+    border: 1px solid rgb(218, 213, 213);
+    /* box-shadow: 0px 0px 8px 3px rgb(236, 202, 222); */
     z-index: 10;
 }
 
@@ -215,8 +215,9 @@ p.project-description {
     padding: 1px 27px;
     width: auto;
     background-color: #C29ABF;
-    border-bottom: 1px solid rgb(236, 202, 222);
-    border-right: 1px solid rgb(236, 202, 222);
+    border: 1px solid #C29ABF;
+    /* border-bottom: 1px solid rgb(236, 202, 222);
+    border-right: 1px solid rgb(236, 202, 222); */
 }
 
 .title h2 {
@@ -263,7 +264,7 @@ a.ally-dark-mode {
     top: 0px;
     left: 0px;
     z-index: 7 !important;
-    opacity: 0.4;
+    opacity: 0.8;
 }
 
 .fa.fa-close {
