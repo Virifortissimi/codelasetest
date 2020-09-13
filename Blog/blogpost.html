@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codelase - My Blog</title>
+
+    <link rel="stylesheet" href="./light-blog.css" id="theme">
+
+    <script src="https://use.fontawesome.com/3cb62e987d.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./blogapp.js"></script>
+    
+    <script src="../homepage/jquery.js"></script>
+    <script src="./blog-ally.js"></script>
+    <!-- <script defer src="./blog-changetheme.js"></script> -->
+
+
+</head>
+<body class="hide-scroll-bar">
+
+    <div id="loader">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="blur"></div>
+    
+    <!-- FIXED SIDE NAV BAR -->
+    <div class="position-fixed nav-side">
+        <div class="nav-side-top-side">
+            <ul>
+                <li class="home-nav-item"> <a href="../index.html">Home</a></li>
+                <li class="home-nav-item"> <a href="./Blog.html">Blog</a></li>
+            </ul>
+            <!-- <h2 class="home-nav-time">Home</h2> -->
+        </div>
+        <div class="nav-side-bottom-side">
+            <h2 class="nav-side-name">Gabriel Emmanuel</h2>
+
+            <form action="" class="form-group">
+                <label for="subscribe">Subscribe to our newsletter</label>
+                <div class="input-group">
+                    <input type="email" name="subscribe" id="subscribe" placeholder="Enter Email Here Address" class="form-control">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">
+                            <i class="fa fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </form>
+            <div class="assessibility-button">
+                <a href="">
+                    <i class="fa fa-cog"></i>
+                </a>
+            </div>
+            <footer>
+                <p>2020 | Made with love by _codelase....</p>
+            </footer>
+        </div>
+    </div>
+    <!--END OF  FIXED SIDE NAV BAR -->
+
+    <div class="container main">
+        
+        <div class="hamburger-icon">
+            <div class="hamburger-line-1"></div>
+            <div class="hamburger-line-2"></div>
+            <div class="hamburger-line-3"></div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-7 col-sm-12 blog-section">
+                
+                <div class="blog-post">
+                    <div class="blog-title">
+                            <img src="./git-round.jpg" alt="">
+                        <div>
+                            <h2 class="post-title">Getting started with Git</h2>
+                            <span> <i class="fa fa-calendar"></i> June 23 2020</span>
+                            <span> <i class="fa fa-folder"></i> Version Control</span>
+                            <span> <i class="fa fa-comment"></i> 5 comment</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-paragraph">
+                            ...Let’s get started! Based on the general concept from Rachel M....
+                            Overview Getting a remote repository Adding New things, Making
+                            Changes...
+                        </p>
+                    </div>
+                    <div class="read-more">
+                        <a href="./blogpost.html" class="blog-read-more">Read More <i class="fa fa-angle-right"></i> </a>
+                    </div>
+                </div>
+
+
+
+                <div class="comment-section">
+                    <h2 class="comment-header">
+                        Leave a comment
+                    </h2>
+
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control name" id="Comment-Name" placeholder="Name">
+                          </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control email" id="Comment-Email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control textare" id="Comment-Text" rows="5" placeholder="Type your message here"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-control comment-btn" >Submit</button>
+                      </form>
+
+
+                </div>
+
+
+                <h3 class="comment-head">
+                    Comments
+                </h3>
+                <hr>
+                <div class="comments">
+                    <h4 class="comment-name">Gabriel Eghosa</h4>
+                    <p class="comment-date">July 22 2020</p>
+                    <p class="comment">Such an enlightening article, Thanks as i have learnt a lot just by 
+                        reading this article. Great job ...</p>
+                </div>
+
+                <div class="pushup"></div>
+            </div>
+
+
+            <div class="col-md-5 col-sm-12 right-nav-side">
+                
+                <form action="" class="form-group search-form">
+                    <div class="input-group">
+                        <input type="text" name="search" id="seacrh" placeholder="Type a keyword and press Enter" class="form-control">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="categories-section">
+                    <h3 class="categories">Categories</h3>
+
+                    <div class="category-item">
+                        <h4 class="category">Software Engineering</h4>
+                        <h4 class="category-value">(3)</h4>
+                    </div>
+                    <hr>
+                    <div class="category-item">
+                        <h4 class="category">Lifestyle</h4>
+                        <h4 class="category-value">(3)</h4>
+                    </div>
+                    <hr>
+                    <div class="category-item">
+                        <h4 class="category">Version Control</h4>
+                        <h4 class="category-value">(3)</h4>
+                    </div>
+                    <hr>
+                    <div class="category-item">
+                        <h4 class="category">Discussion</h4>
+                        <h4 class="category-value">(3)</h4>
+                    </div>
+                    <hr>
+                </div>
+
+
+                <div class="popular-articles-section">
+                    <h3 class="articles">Popular Articles</h3>
+
+                    <div class="article-item">
+                        <img src="./git.jpg" alt="">
+                        <div>
+                            <h4 class="article-title">Getting Started with Git</h4>
+                            <span> <i class="fa fa-folder"></i> Version Control</span>
+                            <span> <i class="fa fa-calendar"></i> June 23 2020</span>
+                        </div>
+                    </div>
+                    <div class="article-item">
+                        <img src="./edo.jpg" alt="">
+                        <div>
+                            <h4 class="article-title">My last trip to the city of Edo state.</h4>
+                            <span> <i class="fa fa-folder"></i> Lifestyle</span>
+                            <span> <i class="fa fa-calendar"></i> June 23 2020</span>
+                        </div>
+                    </div>
+                    <div class="article-item">
+                        <img src="./aspnet.jpg" alt="">
+                        <div>
+                            <h4 class="article-title">Creating an ASPNET sample API</h4>
+                            <span> <i class="fa fa-folder"></i> Software Engineering</span>
+                            <span> <i class="fa fa-calendar"></i> June 23 2020</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+     <!-- ASSESSIBILITY MODAL -->
+     <div class="ally-modal">
+        <div class="title">
+            <h2>Assessibility</h2>
+            <a href="">
+                <i class="fa fa-close"></i>
+            </a>
+        </div>
+        <div class="flex-ally">
+            <div class="flex-left">
+                <h3 class="ally-item">Themes</h3>
+            </div>
+            <div class="flex-right">
+                <a href="" class="ally-light-mode">Light Mode</a>
+                <a href="" class="ally-dark-mode">Dark Mode</a>
+            </div>
+        </div>
+    </div>
+    <!--END OF ASSESSIBILITY MODAL -->
+
+
+
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+    <script>
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+
+</body>
+</html>
